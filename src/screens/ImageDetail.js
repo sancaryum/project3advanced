@@ -2,13 +2,13 @@ import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native'
 
 //props olmasa normal function idi.
-const ImageDetail = (props) => {
-    console.log(props);
+const ImageDetail = ({imageYolu, isim, powerScore}) => {
+    
     return (
         <View>
-            <Image source={props.imageYolu}/>
-            <Text>{props.isim}</Text>
-            <Text>Güç: {props.powerScore}</Text>
+            <Image source={imageYolu}/>
+            <Text>{isim}</Text>
+            <Text>Güç: {powerScore}</Text>
         </View>
 
     );
