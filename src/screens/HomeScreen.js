@@ -27,6 +27,10 @@ const HomeScreen = ({navigation}) => {
         title="Go to Color Screen"
         onPress={()=>navigation.navigate('Renk')}
     />
+     <Button
+        title="Go to Square Screen"
+        onPress={()=>navigation.navigate('NextLevelColorKardess')}
+    />
     </View>
     );
 };
